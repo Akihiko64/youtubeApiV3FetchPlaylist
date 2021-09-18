@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #f4f4f4f4;
+                font-size: 14px;
+                color: #666;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            #title{
+                width: fit-content;
+                margin: auto;
+                text-align: center;
+            }
+
+
+            #container_result {
+                width: 800px;
+                margin: auto;
+                overflow: auto;
+                background-color: #fff;
+                padding: 15px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #results{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #results li{
+                list-style: none;
+                margin: 20px;
+            }
+            #results li a{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #9289B1;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="title">
+            <h1>YOUTUBE API TEST</h1>
+            <h2>SCRIPTA DIGITAL</h2>
+        </div>
+        <div id="container_result">
+            <h2>Youtube Videos</h2>
+            <ul id="results"></ul>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="conn.js"></script>
+    </body>
+</html>
